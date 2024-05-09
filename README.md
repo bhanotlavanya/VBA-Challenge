@@ -1,20 +1,37 @@
+In this challenge we will be crearing a vba script which will find the quarterly change in stcok price, there total volume,percentage of change which would further tell us better earning oppurtunities and our code will ultimately tell us which stock was best performing and which one did not performed well.
+
 # VBA-Challenge
 
 Sub Stock_Data_Analysis()
+
 First we have to declare all the variables which we are going to use
+
 '(Ticker Symbol, Open Price, Closing Price, Percentage Change, Total Stock Volume,Quarterly Change, Greatest Total Volume)
+
 Dim ticker As String
+
 Dim open_price As Double
+
 Dim closing_price As Double
+
 Dim pc As Double
+
 Dim tsv As Double
+
 Dim qc As Double
+
 Dim gtv As Double
+
 'Other variables
+
 Dim PreviousStockPrice As Long
+
 Dim table_summary_row As Long
+
 Dim greatest_increase As Double
+
 Dim greatest_decrease As Double
+
 'Declare Worksheet as "ws" and Loop through each worksheet
 Dim ws As Worksheet
 For Each ws In Worksheets
